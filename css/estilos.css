@@ -10,6 +10,7 @@
 body {
   margin: 0;
   color: var(--color-texto);
+  font-family: Poppins, sans-serif;
 }
 ul,
 li {
@@ -22,10 +23,19 @@ h2,
 h3 {
   margin-top: 0;
 }
+h1 {
+  margin-bottom: 0;
+}
 .cabecera,
 .pie {
   background-color: var(--color-principal);
   color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.pie {
+  justify-content: center;
 }
 .principal {
   background-color: var(--color-fondo-principal);
