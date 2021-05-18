@@ -1,8 +1,15 @@
+:root {
+  --color-principal: #2d3142;
+  --color-fondo-principal: #d8d5db;
+  --color-fondo-secundario: #adacb5;
+  --color-texto: #333;
+}
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
+  color: var(--color-texto);
 }
 ul,
 li {
@@ -14,4 +21,15 @@ h1,
 h2,
 h3 {
   margin-top: 0;
+}
+.cabecera,
+.pie {
+  background-color: var(--color-principal);
+  color: #fff;
+}
+.principal {
+  background-color: var(--color-fondo-principal);
+}
+.sidebar {
+  background-color: var(--color-fondo-secundario);
 }
