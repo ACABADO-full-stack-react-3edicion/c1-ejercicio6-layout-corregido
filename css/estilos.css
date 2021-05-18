@@ -59,18 +59,18 @@ h3 {
   margin-top: 15px;
 }
 .contenedor-principal {
-  display: flex;
+  min-height: calc(100vh - var(--altura-cabecera-pie) * 2);
 }
 .principal {
   flex: 2;
-}
-.contenedor-principal {
-  min-height: calc(100vh - var(--altura-cabecera-pie) * 2);
 }
 .contenedor-general {
   margin: 0 auto;
 }
 @media (min-width: 500px) {
+  .contenedor-principal {
+    display: flex;
+  }
   .contenedor-general {
     width: 480px;
   }
