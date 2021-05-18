@@ -43,6 +43,7 @@ h3 {
 }
 .sidebar {
   background-color: var(--color-fondo-secundario);
+  flex: 1;
 }
 .principal,
 .sidebar {
@@ -55,4 +56,10 @@ h3 {
 }
 .sidebar .listado + .listado {
   margin-top: 15px;
+}
+.contenedor-principal {
+  display: flex;
+}
+.principal {
+  flex: 2;
 }
