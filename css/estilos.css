@@ -3,6 +3,7 @@
   --color-fondo-principal: #d8d5db;
   --color-fondo-secundario: #adacb5;
   --color-texto: #333;
+  --altura-cabecera-pie: 100px;
 }
 * {
   box-sizing: border-box;
@@ -31,7 +32,7 @@ h3 {
 .pie {
   background-color: var(--color-principal);
   color: #fff;
-  height: 100px;
+  height: var(--altura-cabecera-pie);
   display: flex;
   align-items: center;
 }
@@ -43,6 +44,7 @@ h3 {
 }
 .sidebar {
   background-color: var(--color-fondo-secundario);
+  flex: 1;
 }
 .principal,
 .sidebar {
@@ -55,4 +57,13 @@ h3 {
 }
 .sidebar .listado + .listado {
   margin-top: 15px;
+}
+.contenedor-principal {
+  display: flex;
+}
+.principal {
+  flex: 2;
+}
+.contenedor-principal {
+  min-height: calc(100vh - var(--altura-cabecera-pie) * 2);
 }
